@@ -6,13 +6,8 @@ import path from "path";
 
 export default [
   {
-    // input: pkg.source,
-    // output: [
-    //   { file: pkg.main, format: "cjs" },
-    //   { file: pkg.module, format: "esm" },
-    // ],
     input: [
-      "src/index.js",
+      pkg.source,
       "src/components/ExampleComponent.js",
       "src/mymodule/index.js",
     ],
@@ -22,13 +17,13 @@ export default [
         dir: "dist",
         exports: "auto",
         preserveModules: true,
-        preserveModulesRoot: "src",
       },
     ],
     plugins: [
       external(),
       babel({
         exclude: "node_modules/**",
+        presets: ["@babel/env", "@babel/preset-react"],
         babelHelpers: "bundled",
       }),
       postcss({

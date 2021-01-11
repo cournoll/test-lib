@@ -22,9 +22,7 @@
     "build:docs": "documentation build src/** -f html -o docs",
     "build:lib": "rollup -c",
     "start": "npm run build:clean && npm run build:docs && rollup -c -w",
-    "start-playground": "cd playground && npm start",
-    "i-playground": "cd playground && npm i",
-    "postinstall": "./scripts/postinstall.sh"
+    "postinstall": "./scripts/postinstall.sh" 
   },
   "eslintConfig": {
     "extends": [
