@@ -2,9 +2,7 @@ import React from "react";
 import styles from "./styles.css";
 
 /**
- * Component example for testing the library.
- *
- * @component
+ * @function ExampleComponent React component to test the library.
  * @param {string} text The text to show.
  */
 export function ExampleComponent({ text }) {
