@@ -10,11 +10,13 @@ function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'defau
 var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 
 /**
- * @function ExampleComponent
- * React component to test the library
- * @example
- * <ExampleComponent text="my text" />
- * @param {string} text The text to show
+ * Example module.
+ * @module web-cloud-frontend-commons/example
+ */
+/**
+ * @function ExampleComponent React component to test the library.
+ * @param {string} text The text to show.
+ * @example <ExampleComponent text="my text" />
  */
 
 function ExampleComponent(_ref) {
