@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./styles.css";
 
 /**
- * Component test the library.
- *
- * @component
+ * Component to test the library
+ * @param {object} props Component props
+ * @param {string} props.text A text to show
  * @example <ExampleComponent text="my text" />
  */
 export function ExampleComponent({ text }) {

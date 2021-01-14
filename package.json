@@ -19,7 +19,7 @@
   "scripts": {
     "build": "npm run build:clean && npm run build:lib && npm run build:docs",
     "build:clean": "rimraf dist && rimraf docs",
-    "build:docs": "jsdoc -c jsdoc.conf.json",
+    "build:docs": "documentation build --document-exported index.js",
     "build:lib": "rollup -c",
     "start": "npm run build:clean && npm run build:docs && rollup -c -w",
     "postinstall": "./scripts/postinstall.sh"
