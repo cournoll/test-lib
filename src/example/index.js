@@ -1,13 +1,10 @@
-/**
- * Example module.
- * @module web-cloud-frontend-commons/example
- */
 import React from "react";
 import styles from "./styles.css";
 
 /**
- * @function ExampleComponent React component to test the library.
- * @param {string} text The text to show.
+ * Component test the library.
+ *
+ * @component
  * @example <ExampleComponent text="my text" />
  */
 export function ExampleComponent({ text }) {
