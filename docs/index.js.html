@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: index.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,31 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: index.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from "react";
+import styles from "./styles.css";
 
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+/**
+ * @function ExampleComponent React component to test the library
+ * @example
+ * &lt;ExampleComponent text="my text" />
+ * @param {String} text The text to show
+ * @returns {JSX} render the component
+ */
+export function ExampleComponent({ text }) {
+  return &lt;div className={styles.example}>Example Component: {text}&lt;/div>;
+}
+</code></pre>
+        </article>
+    </section>
 
 
 

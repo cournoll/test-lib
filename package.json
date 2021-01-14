@@ -19,7 +19,7 @@
   "scripts": {
     "build": "npm run build:clean && npm run build:lib && npm run build:docs",
     "build:clean": "rimraf dist && rimraf docs",
-    "build:docs": "documentation build src/** -f html -o docs",
+    "build:docs": "jsdoc -d docs src/**",
     "build:lib": "rollup -c",
     "start": "npm run build:clean && npm run build:docs && rollup -c -w",
     "postinstall": "./scripts/postinstall.sh"
@@ -49,6 +49,7 @@
     "@babel/preset-react": "^7.12.10",
     "@rollup/plugin-babel": "^5.2.2",
     "documentation": "^13.1.0",
+    "jsdoc": "^3.6.6",
     "rimraf": "^3.0.2",
     "rollup": "^2.36.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
