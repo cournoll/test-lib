@@ -13,6 +13,7 @@ var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
  * Component to test the library
  * @param {object} props Component props
  * @param {string} props.text A text to show
+ * @return A simple div with text
  * @example <ExampleComponent text="my text" />
  */
 
