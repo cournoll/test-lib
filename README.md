@@ -2,4 +2,4 @@
 
 React library with common frontend features.
 
-[Documentation](https://git.corp.adobe.com/pages/3di-substance/web-cloud-frontend-commons/)
+[Documentation](https://cournoll.github.io/test-lib/)
