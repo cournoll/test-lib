@@ -19,7 +19,7 @@
   "scripts": {
     "build": "npm run build:clean && npm run build:lib && npm run build:docs",
     "build:clean": "rimraf dist && rimraf docs",
-    "build:docs": "documentation build src/** -f html -o docs --theme node_modules/documentation-theme-light",
+    "build:docs": "jsdoc -d docs -r ./README.md src/**",
     "build:lib": "rollup -c",
     "start": "npm run build:clean && npm run build:docs && rollup -c -w",
     "postinstall": "./scripts/postinstall.sh"
