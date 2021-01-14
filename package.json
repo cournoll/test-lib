@@ -19,7 +19,7 @@
   "scripts": {
     "build": "npm run build:clean && npm run build:lib && npm run build:docs",
     "build:clean": "rimraf dist && rimraf docs",
-    "build:docs": "documentation build src/** -f html -o docs",
+    "build:docs": "documentation build src/** -f html -o docs --theme node_modules/documentation-theme-light",
     "build:lib": "rollup -c",
     "start": "npm run build:clean && npm run build:docs && rollup -c -w",
     "postinstall": "./scripts/postinstall.sh"
@@ -50,6 +50,7 @@
     "@rollup/plugin-babel": "^5.2.2",
     "better-docs": "^2.3.2",
     "documentation": "^13.1.0",
+    "documentation-theme-light": "^1.1.1",
     "jsdoc": "^3.6.6",
     "rimraf": "^3.0.2",
     "rollup": "^2.36.1",
