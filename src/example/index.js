@@ -3,7 +3,8 @@ import styles from "./styles.css";
 
 /**
  * Component to test the library
- * @param {string} text A text to show
+ * @param {object} props Component props
+ * @param {string} props.text A text to show
  * @example <ExampleComponent text="my text" />
  */
 export function ExampleComponent({ text }) {
