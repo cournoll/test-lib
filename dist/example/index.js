@@ -10,7 +10,7 @@ function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'defau
 var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 
 /**
- * @function ExampleComponent Component to test the library
+ * Component to test the library
  * @param {object} props Component props
  * @param {string} props.text A text to show
  * @example <ExampleComponent text="my text" />
