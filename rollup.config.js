@@ -19,7 +19,6 @@ export default [
       external(),
       babel({
         exclude: "node_modules/**",
-        presets: ["@babel/env", "@babel/preset-react"],
         babelHelpers: "bundled",
       }),
       postcss({

@@ -22,7 +22,8 @@
     "build:docs": "jsdoc -d docs -r ./README.md src/**",
     "build:lib": "rollup -c",
     "start": "npm run build:clean && npm run build:docs && rollup -c -w",
-    "postinstall": "./scripts/postinstall.sh"
+    "postinstall": "./scripts/postinstall.sh",
+    "test": "jest"
   },
   "eslintConfig": {
     "extends": [
@@ -48,18 +49,20 @@
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
     "@rollup/plugin-babel": "^5.2.2",
-    "better-docs": "^2.3.2",
-    "documentation": "^13.1.0",
-    "documentation-theme-light": "^1.1.1",
     "jsdoc": "^3.6.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-test-renderer": "^17.0.1",
     "rimraf": "^3.0.2",
     "rollup": "^2.36.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-postcss": "^3.1.8"
+    "rollup-plugin-postcss": "^3.1.8",
+    "styled-components": "^5.2.1"
   },
   "peerDependencies": {
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.2.1"
   },
   "husky": {
     "hooks": {

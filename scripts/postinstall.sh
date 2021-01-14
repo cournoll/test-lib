@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e;
 
 # skip postinstall if npm install for development
 # rollup.config.js is not included in dist
