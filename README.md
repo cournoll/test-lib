@@ -1,4 +1,4 @@
-# Web & cloud frontend commons
+## Web & cloud frontend commons
 
 React library with common frontend features.
 
