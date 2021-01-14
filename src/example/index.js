@@ -2,10 +2,9 @@ import React from "react";
 import styles from "./styles.css";
 
 /**
- * Component to test the library
+ * @function ExampleComponent Component to test the library
  * @param {object} props Component props
  * @param {string} props.text A text to show
- * @return {JSX} A simple div with text
  * @example <ExampleComponent text="my text" />
  */
 export function ExampleComponent({ text }) {
