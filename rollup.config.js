@@ -6,11 +6,7 @@ import path from "path";
 
 export default [
   {
-    input: [
-      pkg.source,
-      "src/components/ExampleComponent.js",
-      "src/mymodule/index.js",
-    ],
+    input: pkg.source,
     output: [
       {
         format: "cjs",

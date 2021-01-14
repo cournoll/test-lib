@@ -9,10 +9,18 @@ function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'defau
 
 var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 
-var MyModule = function MyModule() {
-  return /*#__PURE__*/React__default['default'].createElement("div", {
-    className: styles.module
-  }, "My Module");
-};
+/**
+ * Component example for testing the library.
+ *
+ * @component
+ * @param {string} text The text to show.
+ */
 
-exports.MyModule = MyModule;
+function ExampleComponent(_ref) {
+  var text = _ref.text;
+  return /*#__PURE__*/React__default['default'].createElement("div", {
+    className: styles.example
+  }, "Example Component: ", text);
+}
+
+exports.ExampleComponent = ExampleComponent;

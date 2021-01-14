@@ -2,10 +2,8 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var ExampleComponent = require('./components/ExampleComponent.js');
-var index = require('./mymodule/index.js');
+var index = require('./example/index.js');
 
 
 
-exports.ExampleComponent = ExampleComponent;
-exports.mymodule = index;
+exports.ExampleComponent = index.ExampleComponent;
