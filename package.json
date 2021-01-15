@@ -17,6 +17,10 @@
     "build:clean": "rimraf dist && rimraf docs",
     "build:docs": "jsdoc -d docs -r ./README.md src/**",
     "build:lib": "rollup -c",
+    "build:example": "rimraf web-cloud-frontend-commons-0.1.0.tgz && npm pack && cd example && npm rm web-cloud-frontend-commons && npm i ../web-cloud-frontend-commons-0.1.0.tgz",
+    "start": "rollup -c -w",
+    "start:example": "npm run build:example && cd example && npm start",
+    "install:example": "cd example && npm i",
     "postinstall": "./scripts/postinstall.sh",
     "test": "jest"
   },
