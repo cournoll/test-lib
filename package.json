@@ -15,8 +15,8 @@
   },
   "scripts": {
     "build": "npm run build:clean && npm run build:lib && npm run build:docs && npm run build:storybook",
-    "build:clean": "rimraf dist && rimraf docs/typedoc && rimraf docs/storybook",
-    "build:docs": "typedoc --out docs/typedoc src/index.ts",
+    "build:clean": "rimraf dist && rimraf docs",
+    "build:docs": "typedoc --out docs src/index.ts",
     "build:lib": "tsc",
     "build:storybook": "build-storybook -o docs/storybook",
     "start": "tsc -w",
