@@ -12,7 +12,7 @@ npm i
 
 ### Documentation
 
-[Documentation](https://git.corp.adobe.com/pages/3di-substance/web-cloud-frontend-commons/) generated with [JSDoc](https://github.com/jsdoc/jsdoc)
+[Documentation](https://cournoll.github.io/test-lib/) generated with [JSDoc](https://github.com/jsdoc/jsdoc)
 
 ### Build
 
