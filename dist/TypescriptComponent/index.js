@@ -9,9 +9,6 @@ var index_styles_1 = require("./index.styles");
 ;
 /**
  * Component to test the library
- * @param {string} text A text to show
- * @param {boolean} highlight Change the border to red
- * @example <TypescriptComponent text="my text" />
  */
 function TypescriptComponent(_a) {
     var text = _a.text, highlight = _a.highlight;

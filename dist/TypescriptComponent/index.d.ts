@@ -1,12 +1,12 @@
 /// <reference types="react" />
+/** Interface to describe TypescriptComponent props */
 export interface TypescriptComponentProps {
+    /** A text to show */
     text: string;
+    /** Change the border to red */
     highlight?: boolean;
 }
 /**
  * Component to test the library
- * @param {string} text A text to show
- * @param {boolean} highlight Change the border to red
- * @example <TypescriptComponent text="my text" />
  */
 export declare function TypescriptComponent({ text, highlight, }: TypescriptComponentProps): JSX.Element;
