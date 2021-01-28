@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyledDiv } from './index.styles';
 
-type TypescriptComponentProps = {
+export interface TypescriptComponentProps {
   text: string;
   highlight?: boolean;
 };

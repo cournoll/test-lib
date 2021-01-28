@@ -6,6 +6,7 @@ exports.__esModule = true;
 exports.TypescriptComponent = void 0;
 var react_1 = __importDefault(require("react"));
 var index_styles_1 = require("./index.styles");
+;
 /**
  * Component to test the library
  * @param {string} text A text to show
