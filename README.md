@@ -24,33 +24,24 @@ To build the `dist` and `docs` version of your component:
 npm run build
 ```
 
-The build is done with [Rollup](https://github.com/rollup/rollup).
-See `rollup.config.js` for the configuration.
-
 ### Test
 
 ```bash
 npm t
 ```
 
-Tests uses [Jest](https://github.com/facebook/jest).
-
 ### Run a local example
 
-Install example dependencies:
+To run a local example first install dependencies in the root folder.
+
+Then go to `example` folder and install dependencies:
 
 ```bash
-npm run example:install
+npm i
 ```
 
-Start Rollup in watch mode:
+And finally run the example project:
 
 ```bash
 npm start
-```
-
-In another console tab start example:
-
-```bash
-npm run example:start
 ```

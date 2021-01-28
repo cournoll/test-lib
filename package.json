@@ -20,8 +20,6 @@
     "build:lib": "tsc",
     "build:storybook": "build-storybook -o docs/storybook",
     "start": "tsc -w",
-    "example:install": "cd example && npm i",
-    "example:start": "cd example && npm start",
     "postinstall": "node ./scripts/postinstall.js",
     "test": "jest",
     "test:watch": "jest --watch",
