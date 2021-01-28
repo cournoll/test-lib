@@ -9,5 +9,5 @@ declare type TypescriptComponentProps = {
  * @param {boolean} highlight Change the border to red
  * @example <TypescriptComponent text="my text" />
  */
-export declare function TypescriptComponent({ text, highlight }: TypescriptComponentProps): JSX.Element;
+export declare function TypescriptComponent({ text, highlight, }: TypescriptComponentProps): JSX.Element;
 export {};

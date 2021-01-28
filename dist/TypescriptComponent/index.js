@@ -14,8 +14,8 @@ var index_styles_1 = require("./index.styles");
  */
 function TypescriptComponent(_a) {
     var text = _a.text, highlight = _a.highlight;
-    return react_1["default"].createElement(index_styles_1.StyledDiv, { highlight: highlight },
-        "Typescript Component: ",
-        text);
+    return (react_1["default"].createElement(index_styles_1.StyledDiv, { highlight: highlight },
+        "Typescript Component text: ",
+        text));
 }
 exports.TypescriptComponent = TypescriptComponent;
