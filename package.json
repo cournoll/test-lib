@@ -2,9 +2,9 @@
   "name": "web-cloud-frontend-commons",
   "version": "0.1.0",
   "license": "UNLICENSED",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.js",
-  "source": "src/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "source": "src/index.ts",
   "files": [
     "dist",
     "scripts"
@@ -15,14 +15,15 @@
   "scripts": {
     "build": "npm run build:clean && npm run build:lib && npm run build:docs",
     "build:clean": "rimraf dist && rimraf docs",
-    "build:docs": "jsdoc -d docs -r ./README.md src/**",
-    "build:lib": "rollup -c",
-    "build:example": "rimraf web-cloud-frontend-commons-0.1.0.tgz && npm pack && cd example && npm rm web-cloud-frontend-commons && npm i ../web-cloud-frontend-commons-0.1.0.tgz",
-    "start": "rollup -c -w",
-    "start:example": "npm run build:example && cd example && npm start",
-    "install:example": "cd example && npm i",
-    "postinstall": "./scripts/postinstall.sh",
-    "test": "jest"
+    "build:docs": "typedoc --out docs src/index.ts",
+    "build:lib": "tsc",
+    "start": "tsc -w",
+    "example:install": "cd example && npm i",
+    "example:start": "cd example && npm start",
+    "postinstall": "node ./scripts/postinstall.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "eslintConfig": {
     "extends": [
@@ -43,29 +44,33 @@
     ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.12.10",
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "@babel/preset-react": "^7.12.10",
-    "@rollup/plugin-babel": "^5.2.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "jsdoc": "^3.6.6",
+    "@types/jest": "^26.0.20",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/styled-components": "^5.1.7",
+    "husky": "^4.3.8",
+    "ncp": "^2.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "rimraf": "^3.0.2",
-    "rollup": "^2.36.1",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-postcss": "^3.1.8"
+    "styled-components": "^5.2.1",
+    "ts-jest": "^26.4.4",
+    "tslib": "^2.1.0",
+    "typedoc": "^0.20.19",
+    "typescript": "^4.1.3"
   },
   "peerDependencies": {
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.2.1",
+    "@marketingtech/launch-code": "^0.19.0"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm t; npm run build; git add dist/* docs/*"
+      "pre-commit": "npm t; npm run build; git add dist/* docs/*; git reset -- dist/package.json"
     }
   }
 }

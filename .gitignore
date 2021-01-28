@@ -9,6 +9,7 @@
 # testing
 /coverage
 /playground/.eslintcache
+/example/node_modules
 
 # production
 /build

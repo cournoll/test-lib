@@ -38,7 +38,7 @@ Tests uses [Jest](https://github.com/facebook/jest).
 Install example dependencies:
 
 ```bash
-npm run install:example
+npm run example:install
 ```
 
 Start Rollup in watch mode:
@@ -50,11 +50,5 @@ npm start
 In another console tab start example:
 
 ```bash
-npm run start:example
-```
-
-:warning: **After updating the library** you need to rebuild your example:
-
-```bash
-npm run build:example
+npm run example:start
 ```

@@ -4,18 +4,20 @@
   "private": true,
   "scripts": {
     "start": "node ../node_modules/react-scripts/bin/react-scripts.js start",
-    "build": "node ../node_modules/react-scripts/bin/react-scripts.js build",
-    "test": "node ../node_modules/react-scripts/bin/react-scripts.js test",
-    "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
+    "preinstall": "node ./scripts/preinstall.js"
   },
   "dependencies": {
+    "@spectrum-css/button": "^3.0.0-beta.6",
+    "@spectrum-css/icon": "^3.0.0-beta.2",
+    "@spectrum-css/page": "^3.0.0-beta.0",
+    "@spectrum-css/sidenav": "^3.0.0-beta.5",
+    "@spectrum-css/typography": "^3.0.0-beta.1",
+    "@spectrum-css/vars": "^3.0.0-beta.2",
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "file:../node_modules/react-scripts",
-    "web-cloud-frontend-commons": "file:../web-cloud-frontend-commons-0.1.0.tgz"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "web-cloud-frontend-commons": "file:../dist"
   },
   "browserslist": [
     ">0.2%",
