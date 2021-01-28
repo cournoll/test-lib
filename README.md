@@ -12,7 +12,8 @@ npm i
 
 ### Documentation
 
-[Documentation](https://cournoll.github.io/test-lib/) generated with [JSDoc](https://github.com/jsdoc/jsdoc)
+[Typedoc](https://cournoll.github.io/test-lib/typedoc)
+[Storybook](https://cournoll.github.io/test-lib/storybook)
 
 ### Build
 
