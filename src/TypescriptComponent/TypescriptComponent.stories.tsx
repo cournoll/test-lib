@@ -7,14 +7,12 @@ import { TypescriptComponent, TypescriptComponentProps } from './index';
 export default {
   title: 'TypescriptComponent',
   component: TypescriptComponent,
+  args: {
+    highlight: true,
+    text: 'Ceci est un text',
+  }
 } as Meta;
 
-const Template: Story<TypescriptComponentProps> = (args) => (
+export const Default: Story<TypescriptComponentProps> = (args) => (
   <TypescriptComponent {...args} />
 );
-
-export const Primary = Template.bind({});
-Primary.args = {
-  highlight: true,
-  text: 'Ceci est un text',
-};
